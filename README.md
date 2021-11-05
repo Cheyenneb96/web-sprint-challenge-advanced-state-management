@@ -15,9 +15,9 @@ You are not allowed to collaborate during the sprint challenge.
 In this challenge, you are to build a Smurfs village database utilizing Redux as your state management system. Build this challenge from the ground up using what you have learned about state management.
 
 ## Project Setup
-* [ ] Run npm install to install your dependencies.
-* [ ] Run npm start to run your frontend and backend code automatically.
-* [ ] Note your backend code will run automatically when your run npm start. There is no need to seperately run a server.js file and no means to test the server through postman or the browser. Feel free to ignore any messages related to MSW or mock service workers.
+* [. ] Run npm install to install your dependencies.
+* [. ] Run npm start to run your frontend and backend code automatically.
+* [ . ] Note your backend code will run automatically when your run npm start. There is no need to seperately run a server.js file and no means to test the server through postman or the browser. Feel free to ignore any messages related to MSW or mock service workers.
 
 ## Project Instructions
 
@@ -108,10 +108,19 @@ In this project, you will build the reducer, actions and basic redux connects ne
 
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. Add your answers to the questions within `interview_answers.md` file. These will not be counted as a part of your sprint score but will be helpful for preparing you for your endorsement interview, and enhancing overall understanding.
 
-1. What problem does the context API help solve?
+1. What problem does the context API help solve? 
+
+it is used for sharing state. it helps prevent prop drilling.
 
 2. In your own words, describe `actions`, `reducers` and the `store` and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth' in a redux application?
 
+actions are events that describesomething that happened in the application.
+reducers take the current state and an action as arguments and return the new state.
+store is where the state of the application is stored in one obj. so it helps to create a universal app.
+
 3. What does `redux-thunk` allow us to do? How does it change our `action-creators`?
 
+thunk allows you to write action creators that return a funstion instead of an action. this allows delayed actions and working with promises.
+
 4. What is your favorite state management system you've learned and this sprint? Please explain why!
+ using hooks.  you can use hooks as your primary state management tool without and library. it makes a simpler more straightfoward way to handle global state.
