@@ -7,7 +7,6 @@ export const fetchSmurfs = () => {
             if (response.error) {
                 console.log(response.error)
             } else {
-                
                 dispatch(fetchSuccess(response.data))
             }
         })
@@ -21,7 +20,6 @@ export const postSmurfs = (smurf) => {
             if (response.error) {
                 console.log(response.error)
             } else {
-                
                 dispatch(addSmurf(response.data))
             }
         })
