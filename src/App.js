@@ -9,10 +9,10 @@ import "./App.css";
 import { connect } from 'react-redux';
 
 const App = ({ fetchSmurfs, smurfs }) => {
-  console.log('smurfs', smurfs)
+  
 
   useEffect(() => {
-    console.log('useEffect')
+    
     fetchSmurfs()
   }, [])
 
